@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap&subset=cyrillic');
+
+body { 
+    font-family: 'Oswald', sans-serif;
+ }
+
+/* #card,  #fl, #tit1, #tit2, #tit3, #tit4 {  border: 1px solid black;  } */
+
+#card {
+     margin: 50px auto; 
+     width: 300px;
+     height: 675px;
+     
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-content: flex-start;
+
+}
+
+#fl {
+    width: 280px;
+    height: 420px;
+    margin-top: 10px
+}
+
+#tit1 {
+    width: 280px;
+    height: 75px;
+    color: #616161;
+    font-size: 30px;
+    line-height: 1;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#tit2 {
+    width: 280px;
+    height: 45px;
+    
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center    
+}
+
+#tit2 > div {
+    display: flex;
+    align-items: center;
+}
+
+#tit2 > div:nth-child(1) {
+    font-size: 30px;
+    color: #242323;
+    font-weight: 600;
+}
+
+#tit2 > div:nth-child(2) {
+    font-size: 19px;
+    color: #868282;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+#tit3 {
+    width: 280px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center   
+}
+
+.material-icons {
+    color: #ffcf00;
+    
+}
+
+.material-icons > span {
+    font-size: 32px
+}
+
+/* #tit3 > i {
+    font-size: 28px
+} */
+
+
+#tit4 {
+    width: 280px;
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center 
+}

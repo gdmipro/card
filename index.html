@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Карточка товара</title>
+
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet">
+
+</head>
+<body>
+    
+<script>
+
+    myCard = {
+        cardName1: "Тайная жизнь", 
+        cardName2: "домашних животных 2",
+        cost: 50,
+        currency: "руб.",
+        file: "card.jpg",
+        type: "blu-ray.jpg",
+        action: true,
+        rating: 4,
+        but: "order.jpg"
+
+    }
+
+
+</script>
+
+
+    <div id="card">
+        <div id="fl"><img id="infl" src=""></div>
+
+     <div id="tit1">
+        <div></div> 
+        <div></div>
+    </div>
+    
+    <div id="tit2">
+        <div></div>
+        <div></div>
+    </div>
+
+    <div id="tit3">
+    </div>
+
+    <div id="tit4">
+        <img id="b1" src="">
+    </div>
+
+    </div>
+
+    <script>
+        infl.src =  "images/"+myCard.file
+
+        f = document.getElementById("tit1")
+        d = f.getElementsByTagName('div')
+
+        d[0].innerHTML =  myCard.cardName1
+        d[1].innerHTML =  myCard.cardName2
+     
+        f1 = document.getElementById("tit2")
+        d1 = f1.getElementsByTagName('div')
+
+        d1[1].innerHTML =  myCard.cost+",00 "+myCard.currency 
+        
+        cost1=0
+        cost1 = myCard.cost * .9 
+        
+        d1[0].innerHTML =  cost1+",00 "+myCard.currency 
+
+        st = ''
+        for (i=1; i<=myCard.rating; i++) {
+            st += "<i class='material-icons'><span>star</span></i>"
+        }
+            st += "<i class='material-icons'><span>star_border</span></i>"
+
+            tit3.innerHTML = st
+            b1.src = "images/"+myCard.but
+
+    </script>
+
+</body>
+</html>

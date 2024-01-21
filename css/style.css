@@ -15,7 +15,7 @@ body {
      justify-content: center;
      flex-wrap: wrap;
      align-content: flex-start;
-
+     border: 1px solid rgb(203, 81, 11);
 }
 
 #fl {
